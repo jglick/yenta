@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.netbeans.contrib.yenta</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>app</artifactId>
+    <packaging>nbm-application</packaging>
+
+    <name>Yenta Test App</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <netbeans.run.params.ide/>
+        <netbeans.run.params>${netbeans.run.params.ide}</netbeans.run.params>
+        <all.clusters>${project.build.directory}/${brandingToken}</all.clusters>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.netbeans.cluster</groupId>
+            <artifactId>platform</artifactId>
+            <version>${netbeans.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>demo</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-nbjunit</artifactId>
+            <version>${netbeans.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.2</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <all.clusters>${all.clusters}</all.clusters>
+                        <branding.token>${brandingToken}</branding.token>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

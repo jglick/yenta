@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Install: org/netbeans/contrib/yenta/demo/Installer.class
+OpenIDE-Module-Localizing-Bundle: org/netbeans/contrib/yenta/branding/Bundle.properties
+AutoUpdate-Essential-Module: true
