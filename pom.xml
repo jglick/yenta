@@ -20,6 +20,11 @@
             <name>Jesse Glick</name>
         </developer>
     </developers>
+    <scm>
+        <url>https://bitbucket.org/jglick/yenta</url>
+        <connection>scm:hg:https://jglick@bitbucket.org/jglick/yenta</connection>
+        <developerConnection>scm:hg:ssh://hg@bitbucket.org/jglick/yenta</developerConnection>
+    </scm>
     <repositories>
         <repository>
             <id>netbeans</id>
