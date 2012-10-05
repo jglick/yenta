@@ -10,7 +10,7 @@
     <packaging>nbm</packaging>
     <name>Yenta API</name>
     <description>Allows you to bypass package access restrictions in the NetBeans module system.</description>
-    <url>http://wiki.netbeans.org/NbmPackageStability#Usage_from_external_modules</url>
+    <url>https://bitbucket.org/jglick/yenta</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

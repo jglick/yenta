@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <name>Yenta</name>
     <description>NetBeans module system hacks.</description>
+    <url>https://bitbucket.org/jglick/yenta</url>
     <licenses>
         <license>
             <name>NetBeans CDDL/GPL</name>
