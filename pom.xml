@@ -78,6 +78,7 @@
                     <version>2.3.2</version>
                     <configuration>
                         <tagNameFormat>yenta-@{project.version}</tagNameFormat>
+                        <arguments>-Psonatype-oss-release,stapler-sign</arguments>
                     </configuration>
                 </plugin>
             </plugins>
