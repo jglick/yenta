@@ -30,8 +30,8 @@
         <url>https://bitbucket.org/jglick/yenta</url>
         <connection>scm:hg:https://bitbucket.org/jglick/yenta</connection>
         <developerConnection>scm:hg:ssh://hg@bitbucket.org/jglick/yenta</developerConnection>
-      <tag>yenta-1.1</tag>
-  </scm>
+        <tag>yenta-1.1</tag>
+    </scm>
     <repositories>
         <repository>
             <id>netbeans</id>
@@ -49,9 +49,9 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
+                    <groupId>org.apache.netbeans.utilities</groupId>
                     <artifactId>nbm-maven-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>4.5</version>
                     <extensions>true</extensions>
                     <configuration>
                         <brandingToken>${brandingToken}</brandingToken>
@@ -61,21 +61,26 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>3.8.1</version>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>8</source>
+                        <target>8</target>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.2.0</version>
+                    <configuration>
+                        <archive>
+                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                        </archive>
+                    </configuration>                    
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.3.2</version>
+                    <version>2.5.3</version>
                     <configuration>
                         <tagNameFormat>yenta-@{project.version}</tagNameFormat>
                         <arguments>-Psonatype-oss-release,stapler-sign</arguments>
@@ -90,7 +95,7 @@
         <module>app</module>
     </modules>
     <properties>
-        <netbeans.version>RELEASE72</netbeans.version>
+        <netbeans.version>RELEASE111</netbeans.version>
         <brandingToken>yenta</brandingToken>
     </properties>
 </project>
