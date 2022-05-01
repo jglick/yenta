@@ -1,5 +1,2 @@
-/demo/target/
-/app/target/
-/api/target/
+target
 *.orig
-/lib/target/
