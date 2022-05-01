@@ -30,7 +30,7 @@
         <url>https://github.com/jglick/yenta.git</url>
         <connection>scm:git:https://github.com/jglick/yenta.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/jglick/yenta</developerConnection>
-        <tag>yenta-1.1</tag>
+        <tag>HEAD</tag>
     </scm>
     <build>
         <pluginManagement>
