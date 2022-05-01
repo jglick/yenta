@@ -7,18 +7,14 @@
         <version>1.2-SNAPSHOT</version>
     </parent>
     <artifactId>lib</artifactId>
-    <packaging>jar</packaging>
     <name>Yenta API as library jar</name>
     <description>Allows you to bypass package access restrictions in the NetBeans module system.</description>
-    <url>https://bitbucket.org/jglick/yenta</url>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <url>https://github.com/jglick/yenta</url>
     <dependencies>
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-modules</artifactId>
-            <version>RELEASE72</version>
+            <version>${netbeans.version}</version>
         </dependency>
     </dependencies>
 </project>
