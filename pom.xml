@@ -78,7 +78,7 @@
         <module>lib</module>
     </modules>
     <properties>
-        <netbeans.version>RELEASE111</netbeans.version>
+        <netbeans.version>RELEASE124</netbeans.version>
         <brandingToken>yenta</brandingToken>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
